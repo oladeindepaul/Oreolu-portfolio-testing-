@@ -125,6 +125,8 @@ em{font-style:italic;color:var(--gold)}
 .footer .brand .mark{font-size:1.05rem}
 .footer__copy{flex:1;text-align:center;font-size:.74rem;color:var(--mauve);letter-spacing:.02em;white-space:nowrap}
 .footer__social{display:flex;justify-content:flex-end;gap:12px;flex:1}
+.footer__email{font-size:.78rem;color:var(--ivory);opacity:.85;text-decoration:none;letter-spacing:.01em;border-bottom:1px solid var(--line);padding-bottom:2px;transition:.2s;white-space:nowrap}
+.footer__email:hover{color:var(--gold);border-color:var(--gold);opacity:1}
 .footer .ic{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--ivory);transition:.2s}
 .footer .ic:hover{border-color:var(--gold);color:var(--gold)}
 .footer .ic svg{width:18px;height:18px}
@@ -138,10 +140,11 @@ em{font-style:italic;color:var(--gold)}
   .nav__links[data-open=true]{transform:translateY(0)}
   .nav__toggle{display:flex}
 }
-@media(max-width:420px){
-  .footer{padding-inline:16px}
-  .footer .brand .mark{font-size:.92rem}
-  .footer__copy{font-size:.66rem}
+@media(max-width:560px){
+  .footer{padding-inline:14px;gap:8px}
+  .footer .brand .mark{display:none}
+  .footer__copy{font-size:.62rem}
+  .footer__email{font-size:.62rem}
 }
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.fade{opacity:1;transform:none}}
@@ -281,9 +284,7 @@ em{font-style:italic;color:var(--gold)}
   </a>
   <div class="footer__copy">&copy; 2026 Oreoluwa Oladeinde</div>
   <div class="footer__social">
-    <a class="ic" href="mailto:oreoluwaoladeinde7@gmail.com" aria-label="Email Oreoluwa">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-    </a>
+    <a class="footer__email" href="mailto:oreoluwaoladeinde7@gmail.com">oreoluwaoladeinde7@gmail.com</a>
   </div>
 </footer>
 
