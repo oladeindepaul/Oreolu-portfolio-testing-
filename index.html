@@ -80,9 +80,9 @@ em{font-style:italic;color:var(--gold)}
 .hh__head{max-width:60ch}
 .hh__h{font-size:clamp(1.9rem,4vw,3rem);margin:.9rem 0 .7rem}
 .hh__intro{color:var(--mauve);max-width:46ch;margin:0}
-.hh__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:clamp(30px,5vw,50px)}
-.card{background:var(--aubergine);padding:26px 24px 30px;display:flex;flex-direction:column;gap:10px;transition:background .25s}
-.card:hover{background:var(--plum)}
+.hh__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:clamp(30px,5vw,50px)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px 24px 30px;display:flex;flex-direction:column;gap:10px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-5px);border-color:var(--mauve);box-shadow:0 28px 60px -38px rgba(0,0,0,.7)}
 .card .n{font-size:11px;letter-spacing:.12em;color:var(--gold);font-weight:700}
 .card h3{font-size:1.35rem}
 .card p{color:var(--mauve);font-size:.95rem;line-height:1.5;margin:0}
@@ -147,7 +147,7 @@ em{font-style:italic;color:var(--gold)}
 @media(max-width:680px){
   .nav__links{position:fixed;inset:62px 0 auto 0;flex-direction:column;align-items:flex-start;gap:18px;background:var(--aubergine);padding:24px var(--gutter);border-bottom:1px solid var(--line);transform:translateY(-130%);transition:transform .28s;z-index:40}
   .nav__links[data-open=true]{transform:translateY(0)}
-  .nav__toggle{display:flex}
+  .nav__toggle{display:flex;margin-left:auto}
 }
 @media(max-width:560px){
   .footer{padding-inline:16px}
@@ -188,7 +188,7 @@ em{font-style:italic;color:var(--gold)}
       <li><a href="index.html" aria-current="page">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a class="nav__cta" href="contact.html">Start a project</a></li>
+      <li><a class="nav__cta" href="contact.html">Hire me</a></li>
     </ul>
   </nav>
 </header>
@@ -200,7 +200,7 @@ em{font-style:italic;color:var(--gold)}
       <div>
         <h1 class="hero__title fade">Turning quiet brands into the names everyone's <em>talking about.</em></h1>
         <p class="hero__lede fade d1">Social media manager, brand strategist, and writer. Based in Nigeria, working globally.</p>
-        <a class="hero__btn fade d2" href="contact.html">Start a project</a>
+        <a class="hero__btn fade d2" href="contact.html">Hire me</a>
       </div>
       <div class="hero__visual fade d2">
         <figure class="hero__photo">
@@ -301,7 +301,7 @@ em{font-style:italic;color:var(--gold)}
 
   <section class="section wrap cta">
     <h2 class="reveal">Ready to become the name everyone's <em>talking about?</em></h2>
-    <a class="cta__btn" href="contact.html">Start a project</a>
+    <a class="cta__btn" href="contact.html">Hire me</a>
   </section>
 
 </main>
