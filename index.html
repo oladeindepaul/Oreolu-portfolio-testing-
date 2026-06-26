@@ -7,7 +7,7 @@
 <meta name="description" content="I help brands turn identity into language audiences understand, trust, and follow. Social media manager, brand strategist, and writer based in Nigeria, working globally.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --aubergine:#271B29;
@@ -15,9 +15,10 @@
   --gold:#C99A4A;
   --mauve:#B07F86;
   --plum:#1B121D;
+  --surface:#2F2231;
   --line:rgba(176,127,134,.22);
   --display:'Bodoni Moda',Georgia,serif;
-  --body:'Hanken Grotesk',system-ui,-apple-system,sans-serif;
+  --body:'Mulish',system-ui,-apple-system,sans-serif;
   --maxw:1180px;
   --gutter:clamp(20px,5vw,64px);
 }
@@ -30,11 +31,10 @@ h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.05;margin:0;le
 em{font-style:italic;color:var(--gold)}
 .wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter)}
 .section{padding-block:clamp(56px,9vw,118px)}
-.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:500;margin:0}
+.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:0}
 
-/* fade up */
 .fade{opacity:0;transform:translateY(16px);animation:fadeUp .9s cubic-bezier(.2,.7,.2,1) forwards}
-.fade.d1{animation-delay:.08s}.fade.d2{animation-delay:.16s}.fade.d3{animation-delay:.24s}.fade.d4{animation-delay:.32s}
+.fade.d1{animation-delay:.08s}.fade.d2{animation-delay:.16s}.fade.d3{animation-delay:.24s}
 @keyframes fadeUp{to{opacity:1;transform:none}}
 
 /* nav */
@@ -47,7 +47,7 @@ em{font-style:italic;color:var(--gold)}
 .nav__links{display:flex;align-items:center;gap:clamp(16px,2.4vw,30px);list-style:none;margin:0;padding:0}
 .nav__links a{text-decoration:none;font-size:.94rem;color:var(--ivory);opacity:.85;padding-bottom:2px;border-bottom:1.5px solid transparent;transition:.2s}
 .nav__links a:hover,.nav__links a[aria-current=page]{opacity:1;border-color:var(--gold)}
-.nav__cta{font-size:.82rem!important;font-weight:500;padding:9px 16px;border-radius:4px;background:var(--gold);color:var(--plum)!important;border-bottom:none!important;opacity:1!important;transition:transform .15s}
+.nav__cta{font-size:.82rem!important;font-weight:700;padding:9px 16px;border-radius:4px;background:var(--gold);color:var(--plum)!important;border-bottom:none!important;opacity:1!important;transition:transform .15s}
 .nav__cta:hover{transform:translateY(-2px)}
 .nav__toggle{display:none;background:none;border:0;cursor:pointer;flex-direction:column;gap:5px}
 .nav__toggle span{width:22px;height:2px;background:var(--ivory);border-radius:2px;transition:.2s}
@@ -57,20 +57,23 @@ em{font-style:italic;color:var(--gold)}
 .hero__grid{display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
 .hero__title{font-size:clamp(2.6rem,6.6vw,5.4rem);letter-spacing:-.025em}
 .hero__lede{color:var(--mauve);font-size:clamp(1.02rem,1.5vw,1.2rem);max-width:42ch;margin:1.6rem 0 0}
-.hero__btn{display:inline-block;margin-top:2rem;font-size:.84rem;letter-spacing:.04em;font-weight:500;text-decoration:none;padding:.95em 1.7em;border-radius:4px;background:var(--gold);color:var(--plum);transition:transform .15s}
+.hero__btn{display:inline-block;margin-top:2rem;font-size:.84rem;letter-spacing:.04em;font-weight:700;text-decoration:none;padding:.95em 1.7em;border-radius:4px;background:var(--gold);color:var(--plum);transition:transform .15s}
 .hero__btn:hover{transform:translateY(-2px)}
 .hero__figure{margin:0}
 .hero__figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px;filter:saturate(.92)}
 .hero__cap{font-family:var(--display);font-style:italic;color:var(--mauve);font-size:.95rem;margin-top:.8rem}
-.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:clamp(36px,6vw,68px)}
-.proof div{background:var(--aubergine);padding:clamp(20px,3vw,34px) 18px;text-align:center}
-.proof .num{font-family:var(--display);font-size:clamp(1.9rem,4vw,2.8rem);color:var(--ivory);line-height:1}
-.proof .lab{color:var(--mauve);font-size:.82rem;letter-spacing:.04em;margin-top:.5rem}
 
-/* bio teaser */
+/* proof (Option B) */
+.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:clamp(36px,6vw,68px)}
+.proof div{background:var(--aubergine);padding:clamp(20px,3vw,32px) 16px;text-align:center}
+.proof .num{font-family:var(--display);font-size:clamp(1.9rem,4vw,2.8rem);color:var(--ivory);line-height:1}
+.proof .lab{color:var(--mauve);font-size:.82rem;letter-spacing:.03em;margin-top:.55rem}
+@media(max-width:560px){.proof{grid-template-columns:1fr}}
+
+/* bio */
 .bio{border-top:1px solid var(--line)}
 .bio p{font-family:var(--display);font-size:clamp(1.4rem,3vw,2.2rem);line-height:1.32;max-width:24ch;margin:0;color:var(--ivory)}
-.bio .link{display:inline-block;margin-top:1.8rem;font-family:var(--body);font-size:.9rem;letter-spacing:.04em;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px;transition:.2s}
+.bio .link{display:inline-block;margin-top:1.8rem;font-family:var(--body);font-size:.9rem;letter-spacing:.03em;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px;transition:.2s}
 .bio .link:hover{border-color:var(--gold)}
 
 /* how I help */
@@ -80,23 +83,30 @@ em{font-style:italic;color:var(--gold)}
 .hh__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:clamp(30px,5vw,50px)}
 .card{background:var(--aubergine);padding:26px 24px 30px;display:flex;flex-direction:column;gap:10px;transition:background .25s}
 .card:hover{background:var(--plum)}
-.card .n{font-size:11px;letter-spacing:.12em;color:var(--gold);font-weight:500}
+.card .n{font-size:11px;letter-spacing:.12em;color:var(--gold);font-weight:700}
 .card h3{font-size:1.35rem}
 .card p{color:var(--mauve);font-size:.95rem;line-height:1.5;margin:0}
 
-/* selected work */
+/* selected work (new card) */
 .work__head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem}
 .work__h{font-size:clamp(1.9rem,4vw,3rem);margin-top:.7rem}
-.work__all{font-size:.88rem;letter-spacing:.04em;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px;transition:.2s}
+.work__all{font-size:.88rem;letter-spacing:.03em;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px;transition:.2s}
 .work__all:hover{border-color:var(--gold)}
-.work__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(18px,2.4vw,28px);margin-top:clamp(30px,5vw,50px)}
-.proj{text-decoration:none;color:inherit;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:transform .2s,border-color .2s}
-.proj:hover{transform:translateY(-5px);border-color:var(--mauve)}
-.proj__media{aspect-ratio:3/2;object-fit:cover;width:100%;background:var(--plum)}
-.proj__body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:.4rem}
-.proj__label{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
-.proj__title{font-size:1.4rem}
-.proj__go{margin-top:.4rem;font-size:.82rem;color:var(--mauve)}
+.work__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(18px,2.4vw,26px);margin-top:clamp(30px,5vw,50px)}
+.wc{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:16px 16px 14px;display:flex;flex-direction:column;box-shadow:0 30px 60px -34px rgba(0,0,0,.6)}
+.wc__title{font-family:var(--display);font-weight:500;color:var(--ivory);font-size:1.55rem;text-align:center;margin:6px 0 4px}
+.wc__status{display:flex;align-items:center;justify-content:center;gap:7px;color:var(--mauve);font-size:.8rem;margin:0 0 14px}
+.wc__status .dot{width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.wc__img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;background:var(--plum)}
+.wc__bar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px}
+.wc__meta{display:flex;align-items:center;gap:9px;min-width:0}
+.wc__av{width:32px;height:32px;border-radius:50%;border:1.5px solid var(--ivory);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:11px;flex:none}
+.wc__mt{line-height:1.25;min-width:0}
+.wc__mt b{display:block;color:var(--ivory);font-size:.84rem;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wc__mt span{color:var(--mauve);font-size:.72rem}
+.wc__btn{display:flex;align-items:center;gap:7px;background:var(--gold);color:var(--plum);border-radius:99px;padding:11px 16px;font-weight:700;font-size:.82rem;text-decoration:none;flex:none;transition:transform .15s}
+.wc__btn:hover{transform:translateY(-2px)}
+.wc__btn svg{width:15px;height:15px}
 
 /* approach */
 .approach{background:var(--plum)}
@@ -105,19 +115,19 @@ em{font-style:italic;color:var(--gold)}
 /* cta */
 .cta{text-align:center}
 .cta h2{font-size:clamp(2.1rem,5vw,3.8rem);max-width:18ch;margin:0 auto;letter-spacing:-.02em}
-.cta__btn{display:inline-block;margin-top:2.2rem;font-size:.86rem;letter-spacing:.04em;font-weight:500;text-decoration:none;padding:1.05em 2em;border-radius:4px;background:var(--gold);color:var(--plum);transition:transform .15s}
+.cta__btn{display:inline-block;margin-top:2.2rem;font-size:.86rem;letter-spacing:.04em;font-weight:700;text-decoration:none;padding:1.05em 2em;border-radius:4px;background:var(--gold);color:var(--plum);transition:transform .15s}
 .cta__btn:hover{transform:translateY(-2px)}
 
-/* footer */
-.footer{background:var(--plum);padding:26px var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:18px;border-top:1px solid var(--line)}
+/* footer (same on all sizes) */
+.footer{background:var(--plum);padding:24px var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:14px;border-top:1px solid var(--line)}
+.footer .brand{flex:1;min-width:0}
 .footer .brand .oo{width:30px;height:30px;font-size:12px}
 .footer .brand .mark{font-size:1.05rem}
-.footer__copy{flex:1;text-align:center;font-size:.78rem;color:var(--mauve);letter-spacing:.03em}
+.footer__copy{flex:1;text-align:center;font-size:.74rem;color:var(--mauve);letter-spacing:.02em;white-space:nowrap}
 .footer__social{display:flex;justify-content:flex-end;gap:12px;flex:1}
 .footer .ic{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--ivory);transition:.2s}
 .footer .ic:hover{border-color:var(--gold);color:var(--gold)}
 .footer .ic svg{width:18px;height:18px}
-.footer .brand{flex:1}
 
 @media(max-width:860px){
   .hero__grid{grid-template-columns:1fr}
@@ -127,8 +137,11 @@ em{font-style:italic;color:var(--gold)}
   .nav__links{position:fixed;inset:62px 0 auto 0;flex-direction:column;align-items:flex-start;gap:18px;background:var(--aubergine);padding:24px var(--gutter);border-bottom:1px solid var(--line);transform:translateY(-130%);transition:transform .28s;z-index:40}
   .nav__links[data-open=true]{transform:translateY(0)}
   .nav__toggle{display:flex}
-  .footer{flex-direction:column;text-align:center}
-  .footer .brand,.footer__social,.footer__copy{flex:none;justify-content:center}
+}
+@media(max-width:420px){
+  .footer{padding-inline:16px}
+  .footer .brand .mark{font-size:.92rem}
+  .footer__copy{font-size:.66rem}
 }
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.fade{opacity:1;transform:none}}
@@ -136,7 +149,6 @@ em{font-style:italic;color:var(--gold)}
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="nav">
   <a class="brand" href="index.html" aria-label="Oreoluwa Oladeinde, home">
     <span class="oo">OO</span>
@@ -157,7 +169,6 @@ em{font-style:italic;color:var(--gold)}
 
 <main>
 
-  <!-- HERO -->
   <section class="hero wrap">
     <div class="hero__grid">
       <div>
@@ -171,19 +182,17 @@ em{font-style:italic;color:var(--gold)}
       </figure>
     </div>
     <div class="proof fade d3">
-      <div><div class="num">37K</div><div class="lab">impressions on X</div></div>
-      <div><div class="num">6+</div><div class="lab">influencer collaborations</div></div>
-      <div><div class="num">&#8358;500K+</div><div class="lab">in sales driven</div></div>
+      <div><div class="num">37K+</div><div class="lab">impressions</div></div>
+      <div><div class="num">6+</div><div class="lab">influencer collab</div></div>
+      <div><div class="num">500K+</div><div class="lab">in sales</div></div>
     </div>
   </section>
 
-  <!-- BIO TEASER -->
   <section class="section wrap bio">
     <p>I help brands execute ideas and turn brand identity into a language audiences understand, trust, and follow. I build brands through language, strategy, and storytelling. From copy that converts to content that connects. Based in Nigeria, working globally.</p>
     <a class="link" href="#work">See selected work &rarr;</a>
   </section>
 
-  <!-- HOW I HELP -->
   <section class="section wrap">
     <div class="hh__head">
       <p class="eyebrow">What I do</p>
@@ -199,7 +208,6 @@ em{font-style:italic;color:var(--gold)}
     </div>
   </section>
 
-  <!-- SELECTED WORK -->
   <section class="section wrap" id="work">
     <div class="work__head">
       <div>
@@ -209,22 +217,49 @@ em{font-style:italic;color:var(--gold)}
       <a class="work__all" href="projects.html">All projects &rarr;</a>
     </div>
     <div class="work__grid">
-      <a class="proj" href="https://drive.google.com/drive/folders/1bzUd3ew7ZO4ZZubK2ZedcRpb6_DMp3E2" target="_blank" rel="noopener">
-        <img class="proj__media" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782445888/Seven_Ways_To_Close_The_Diversity_And_Inclusion_Gap_That_Are_Easier_Than_You_Think_alb9vm.jpg" alt="Collaboration work">
-        <div class="proj__body"><span class="proj__label">Collaboration</span><span class="proj__title">Brand collaborations</span><span class="proj__go">View on Drive &rarr;</span></div>
-      </a>
-      <a class="proj" href="https://drive.google.com/drive/folders/1ZXeb83MgjXI8soOwz67OhaUDrOFSSjV9" target="_blank" rel="noopener">
-        <img class="proj__media" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782446477/24_Digital_Marketing_Tips_That_HubSpot_Swears_By_Research_qqaqy9.jpg" alt="Content writing work">
-        <div class="proj__body"><span class="proj__label">Content writing</span><span class="proj__title">Words that work</span><span class="proj__go">View on Drive &rarr;</span></div>
-      </a>
-      <a class="proj" href="https://drive.google.com/drive/folders/1TG_n1NFVslW7a8u_vCqABOpzI03yl9zx" target="_blank" rel="noopener">
-        <img class="proj__media" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782446558/download_4_p0kyxk.jpg" alt="Social media engagement work">
-        <div class="proj__body"><span class="proj__label">Social media engagement (X)</span><span class="proj__title">Growing the room</span><span class="proj__go">View on Drive &rarr;</span></div>
-      </a>
+
+      <article class="wc">
+        <h3 class="wc__title">Collaboration</h3>
+        <p class="wc__status"><span class="dot"></span> Brand partnerships</p>
+        <img class="wc__img" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782445888/Seven_Ways_To_Close_The_Diversity_And_Inclusion_Gap_That_Are_Easier_Than_You_Think_alb9vm.jpg" alt="Collaboration work">
+        <div class="wc__bar">
+          <div class="wc__meta">
+            <span class="wc__av">OO</span>
+            <span class="wc__mt"><b>Oreoluwa Oladeinde</b><span>6+ collaborations</span></span>
+          </div>
+          <a class="wc__btn" href="https://drive.google.com/drive/folders/1bzUd3ew7ZO4ZZubK2ZedcRpb6_DMp3E2" target="_blank" rel="noopener" aria-label="Open Collaboration on Drive">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="wc">
+        <h3 class="wc__title">Content writing</h3>
+        <p class="wc__status"><span class="dot"></span> Articles and copy</p>
+        <img class="wc__img" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782446477/24_Digital_Marketing_Tips_That_HubSpot_Swears_By_Research_qqaqy9.jpg" alt="Content writing work">
+        <div class="wc__bar">
+          <div class="wc__meta">
+            <span class="wc__av">OO</span>
+            <span class="wc__mt"><b>Oreoluwa Oladeinde</b><span>Selected pieces</span></span>
+          </div>
+          <a class="wc__btn" href="https://drive.google.com/drive/folders/1ZXeb83MgjXI8soOwz67OhaUDrOFSSjV9" target="_blank" rel="noopener" aria-label="Open Content writing on Drive">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="wc">
+        <h3 class="wc__title">Social media engagement</h3>
+        <p class="wc__status"><span class="dot"></span> Growth on X</p>
+        <img class="wc__img" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782446558/download_4_p0kyxk.jpg" alt="Social media engagement work">
+        <div class="wc__bar">
+          <div class="wc__meta">
+            <span class="wc__av">OO</span>
+            <span class="wc__mt"><b>Oreoluwa Oladeinde</b><span>37K+ impressions</span></span>
+          </div>
+          <a class="wc__btn" href="https://drive.google.com/drive/folders/1TG_n1NFVslW7a8u_vCqABOpzI03yl9zx" target="_blank" rel="noopener" aria-label="Open Social media engagement on Drive">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
     </div>
   </section>
 
-  <!-- APPROACH -->
   <section class="section approach">
     <div class="wrap">
       <p class="eyebrow" style="text-align:center;margin-bottom:1.6rem">The approach</p>
@@ -232,7 +267,6 @@ em{font-style:italic;color:var(--gold)}
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="section wrap cta">
     <h2>Ready to become the name everyone's <em>talking about?</em></h2>
     <a class="cta__btn" href="contact.html">Start a project</a>
@@ -240,7 +274,6 @@ em{font-style:italic;color:var(--gold)}
 
 </main>
 
-<!-- FOOTER -->
 <footer class="footer">
   <a class="brand" href="index.html" aria-label="Oreoluwa Oladeinde, home">
     <span class="oo">OO</span>
