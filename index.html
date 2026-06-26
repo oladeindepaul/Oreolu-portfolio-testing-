@@ -141,13 +141,26 @@ em{font-style:italic;color:var(--gold)}
   .nav__toggle{display:flex}
 }
 @media(max-width:560px){
-  .footer{padding-inline:14px;gap:8px}
-  .footer .brand .mark{display:none}
-  .footer__copy{font-size:.62rem}
-  .footer__email{font-size:.62rem}
+  .footer{padding-inline:16px}
+  .footer__copy{font-size:.7rem}
 }
+
+/* motion */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.hh__grid .card:nth-child(2){transition-delay:.07s}
+.hh__grid .card:nth-child(3){transition-delay:.14s}
+.hh__grid .card:nth-child(4){transition-delay:.21s}
+.hh__grid .card:nth-child(5){transition-delay:.28s}
+.work__grid .wc:nth-child(2){transition-delay:.1s}
+.work__grid .wc:nth-child(3){transition-delay:.2s}
+.wc__imgwrap{overflow:hidden;border-radius:14px}
+.wc__img{transition:transform .55s cubic-bezier(.2,.7,.2,1)}
+.wc:hover .wc__img{transform:scale(1.06)}
+.wc__btn svg{transition:transform .2s}
+.wc__btn:hover svg{transform:translateX(3px)}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.fade{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.fade{opacity:1;transform:none}.reveal{opacity:1!important;transform:none!important}}
 </style>
 </head>
 <body>
@@ -185,34 +198,34 @@ em{font-style:italic;color:var(--gold)}
       </figure>
     </div>
     <div class="proof fade d3">
-      <div><div class="num">37K+</div><div class="lab">impressions</div></div>
-      <div><div class="num">6+</div><div class="lab">influencer collab</div></div>
-      <div><div class="num">500K+</div><div class="lab">in sales</div></div>
+      <div><div class="num" data-count="37" data-suffix="K+">37K+</div><div class="lab">impressions</div></div>
+      <div><div class="num" data-count="6" data-suffix="+">6+</div><div class="lab">influencer collab</div></div>
+      <div><div class="num" data-count="500" data-suffix="K+">500K+</div><div class="lab">in sales</div></div>
     </div>
   </section>
 
   <section class="section wrap bio">
-    <p>I help brands execute ideas and turn brand identity into a language audiences understand, trust, and follow. I build brands through language, strategy, and storytelling. From copy that converts to content that connects. Based in Nigeria, working globally.</p>
-    <a class="link" href="#work">See selected work &rarr;</a>
+    <p class="reveal">I help brands execute ideas and turn brand identity into a language audiences understand, trust, and follow. I build brands through language, strategy, and storytelling. From copy that converts to content that connects. Based in Nigeria, working globally.</p>
+    <a class="link reveal" href="#work">See selected work &rarr;</a>
   </section>
 
   <section class="section wrap">
-    <div class="hh__head">
+    <div class="hh__head reveal">
       <p class="eyebrow">What I do</p>
       <h2 class="hh__h">Five ways I help brands say what they mean, and <em>mean what they say.</em></h2>
       <p class="hh__intro">Strategy and storytelling that move past pretty posts into things people remember, trust, and buy.</p>
     </div>
     <div class="hh__grid">
-      <div class="card"><span class="n">01</span><h3>Brand strategy</h3><p>I find what makes you you, then turn it into a voice and a position people remember.</p></div>
-      <div class="card"><span class="n">02</span><h3>Social media management</h3><p>I run your feed end to end, growing an audience that actually listens, not just scrolls.</p></div>
-      <div class="card"><span class="n">03</span><h3>Content strategy</h3><p>I plan what to say and when, so every post earns its place and builds toward something.</p></div>
-      <div class="card"><span class="n">04</span><h3>Content writing</h3><p>Stories, articles, and captions that sound human and make people stay.</p></div>
-      <div class="card"><span class="n">05</span><h3>Copywriting</h3><p>Words built to move, from launch lines to the sentence that closes the sale.</p></div>
+      <div class="card reveal"><span class="n">01</span><h3>Brand strategy</h3><p>I find what makes you you, then turn it into a voice and a position people remember.</p></div>
+      <div class="card reveal"><span class="n">02</span><h3>Social media management</h3><p>I run your feed end to end, growing an audience that actually listens, not just scrolls.</p></div>
+      <div class="card reveal"><span class="n">03</span><h3>Content strategy</h3><p>I plan what to say and when, so every post earns its place and builds toward something.</p></div>
+      <div class="card reveal"><span class="n">04</span><h3>Content writing</h3><p>Stories, articles, and captions that sound human and make people stay.</p></div>
+      <div class="card reveal"><span class="n">05</span><h3>Copywriting</h3><p>Words built to move, from launch lines to the sentence that closes the sale.</p></div>
     </div>
   </section>
 
   <section class="section wrap" id="work">
-    <div class="work__head">
+    <div class="work__head reveal">
       <div>
         <p class="eyebrow">Selected work</p>
         <h2 class="work__h">A few things I'm proud of.</h2>
@@ -221,10 +234,10 @@ em{font-style:italic;color:var(--gold)}
     </div>
     <div class="work__grid">
 
-      <article class="wc">
+      <article class="wc reveal">
         <h3 class="wc__title">Collaboration</h3>
         <p class="wc__status"><span class="dot"></span> Brand partnerships</p>
-        <img class="wc__img" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782445888/Seven_Ways_To_Close_The_Diversity_And_Inclusion_Gap_That_Are_Easier_Than_You_Think_alb9vm.jpg" alt="Collaboration work">
+        <div class="wc__imgwrap"><img class="wc__img" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782445888/Seven_Ways_To_Close_The_Diversity_And_Inclusion_Gap_That_Are_Easier_Than_You_Think_alb9vm.jpg" alt="Collaboration work"></div>
         <div class="wc__bar">
           <div class="wc__meta">
             <span class="wc__av">OO</span>
@@ -234,10 +247,10 @@ em{font-style:italic;color:var(--gold)}
         </div>
       </article>
 
-      <article class="wc">
+      <article class="wc reveal">
         <h3 class="wc__title">Content writing</h3>
         <p class="wc__status"><span class="dot"></span> Articles and copy</p>
-        <img class="wc__img" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782446477/24_Digital_Marketing_Tips_That_HubSpot_Swears_By_Research_qqaqy9.jpg" alt="Content writing work">
+        <div class="wc__imgwrap"><img class="wc__img" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782446477/24_Digital_Marketing_Tips_That_HubSpot_Swears_By_Research_qqaqy9.jpg" alt="Content writing work"></div>
         <div class="wc__bar">
           <div class="wc__meta">
             <span class="wc__av">OO</span>
@@ -247,10 +260,10 @@ em{font-style:italic;color:var(--gold)}
         </div>
       </article>
 
-      <article class="wc">
+      <article class="wc reveal">
         <h3 class="wc__title">Social media engagement</h3>
         <p class="wc__status"><span class="dot"></span> Growth on X</p>
-        <img class="wc__img" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782446558/download_4_p0kyxk.jpg" alt="Social media engagement work">
+        <div class="wc__imgwrap"><img class="wc__img" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782446558/download_4_p0kyxk.jpg" alt="Social media engagement work"></div>
         <div class="wc__bar">
           <div class="wc__meta">
             <span class="wc__av">OO</span>
@@ -266,12 +279,12 @@ em{font-style:italic;color:var(--gold)}
   <section class="section approach">
     <div class="wrap">
       <p class="eyebrow" style="text-align:center;margin-bottom:1.6rem">The approach</p>
-      <p class="q">A brand isn't what you say about yourself. It's what your audience repeats <em>when you're not in the room.</em></p>
+      <p class="q reveal">A brand isn't what you say about yourself. It's what your audience repeats <em>when you're not in the room.</em></p>
     </div>
   </section>
 
   <section class="section wrap cta">
-    <h2>Ready to become the name everyone's <em>talking about?</em></h2>
+    <h2 class="reveal">Ready to become the name everyone's <em>talking about?</em></h2>
     <a class="cta__btn" href="contact.html">Start a project</a>
   </section>
 
@@ -284,7 +297,9 @@ em{font-style:italic;color:var(--gold)}
   </a>
   <div class="footer__copy">&copy; 2026 Oreoluwa Oladeinde</div>
   <div class="footer__social">
-    <a class="footer__email" href="mailto:oreoluwaoladeinde7@gmail.com">oreoluwaoladeinde7@gmail.com</a>
+    <a class="ic" href="mailto:oreoluwaoladeinde7@gmail.com" aria-label="Email Oreoluwa">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+    </a>
   </div>
 </footer>
 
@@ -295,6 +310,18 @@ em{font-style:italic;color:var(--gold)}
     l.setAttribute('data-open',String(!open));
     t.setAttribute('aria-expanded',String(!open));
   });
+
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.15,rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  function easeOut(t){return 1-Math.pow(1-t,3);}
+  function count(el){var target=+el.getAttribute('data-count'),suf=el.getAttribute('data-suffix')||'',dur=1200,start=null;function step(ts){if(!start)start=ts;var p=Math.min((ts-start)/dur,1);el.textContent=Math.round(easeOut(p)*target)+suf;if(p<1)requestAnimationFrame(step);}requestAnimationFrame(step);}
+  var nums=document.querySelectorAll('.proof .num[data-count]');
+  if(!reduce){
+    nums.forEach(function(n){n.textContent='0'+(n.getAttribute('data-suffix')||'');});
+    var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){count(e.target);cio.unobserve(e.target);}});},{threshold:.5});
+    nums.forEach(function(n){cio.observe(n);});
+  }
 </script>
 </body>
 </html>
