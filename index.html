@@ -3,46 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Oreoluwa Oladeinde, Social Media Manager &amp; Brand Strategist</title>
-<meta name="description" content="I help brands turn identity into language audiences understand, trust, and follow. Social media manager, brand strategist, and writer based in Nigeria, working globally.">
+<title>Projects, Oreoluwa Oladeinde</title>
+<meta name="description" content="Selected work by Oreoluwa Oladeinde, across collaboration, content, social media, story writing, and sales.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,800;1,900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --aubergine:#271B29;
-  --ivory:#EFE6D6;
-  --gold:#C99A4A;
-  --mauve:#B07F86;
-  --plum:#1B121D;
-  --surface:#2F2231;
+  --aubergine:#271B29;--ivory:#EFE6D6;--gold:#C99A4A;--mauve:#B07F86;--plum:#1B121D;--surface:#2F2231;
   --line:rgba(176,127,134,.22);
-  --display:'Mulish',system-ui,-apple-system,sans-serif;
-  --body:'Mulish',system-ui,-apple-system,sans-serif;
-  --maxw:1180px;
-  --gutter:clamp(20px,5vw,64px);
+  --display:'Mulish',system-ui,sans-serif;--body:'Mulish',system-ui,-apple-system,sans-serif;
+  --maxw:1180px;--gutter:clamp(20px,5vw,64px);
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--aubergine);color:var(--ivory);font-family:var(--body);font-size:clamp(16px,1.05vw,18px);line-height:1.6;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--aubergine);color:var(--ivory);font-family:var(--body);font-size:clamp(16px,1.05vw,18px);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{max-width:100%;display:block}
 a{color:inherit}
 h1,h2,h3{font-family:var(--display);font-weight:900;line-height:1.04;margin:0;letter-spacing:-.025em}
 em{font-style:italic;color:var(--gold)}
 .wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter)}
-.section{padding-block:clamp(56px,9vw,118px)}
-.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:0}
-
-.fade{opacity:0;transform:translateY(16px);animation:fadeUp .9s cubic-bezier(.2,.7,.2,1) forwards}
-.fade.d1{animation-delay:.08s}.fade.d2{animation-delay:.16s}.fade.d3{animation-delay:.24s}
-@keyframes fadeUp{to{opacity:1;transform:none}}
+.section{padding-block:clamp(56px,9vw,110px)}
+.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:800;margin:0}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
 
 /* nav */
 .nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px var(--gutter);background:color-mix(in srgb,var(--aubergine) 86%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none}
 .brand .oo{width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.03);border:1.5px solid var(--line)}
-.brand .mark{font-family:var(--display);font-size:1.2rem}
-.brand .mark b{font-weight:600}
+.brand .mark{font-family:var(--display);font-size:1.2rem;font-weight:900}
 .brand .dot{color:var(--gold)}
 .nav__links{display:flex;align-items:center;gap:clamp(16px,2.4vw,30px);list-style:none;margin:0;padding:0}
 .nav__links a{text-decoration:none;font-size:.94rem;color:var(--ivory);opacity:.85;padding-bottom:2px;border-bottom:1.5px solid transparent;transition:.2s}
@@ -50,127 +40,58 @@ em{font-style:italic;color:var(--gold)}
 .nav__cta{font-size:.82rem!important;font-weight:700;padding:9px 16px;border-radius:4px;background:var(--gold);color:var(--plum)!important;border-bottom:none!important;opacity:1!important;transition:transform .15s}
 .nav__cta:hover{transform:translateY(-2px)}
 .nav__toggle{display:none;background:none;border:0;cursor:pointer;flex-direction:column;gap:5px}
-.nav__toggle span{width:22px;height:2px;background:var(--ivory);border-radius:2px;transition:.2s}
+.nav__toggle span{width:22px;height:2px;background:var(--ivory);border-radius:2px}
 
-/* hero */
-.hero{padding-block:clamp(56px,10vw,120px) clamp(40px,7vw,80px)}
-.hero__grid{display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
-.hero__title{font-size:clamp(2.6rem,6.6vw,5.4rem);letter-spacing:-.025em}
-.hero__lede{color:var(--mauve);font-size:clamp(1.02rem,1.5vw,1.2rem);max-width:42ch;margin:1.6rem 0 0}
-.hero__btn{display:inline-block;margin-top:2rem;font-size:.84rem;letter-spacing:.04em;font-weight:700;text-decoration:none;padding:.95em 1.7em;border-radius:4px;background:var(--gold);color:var(--plum);transition:transform .15s}
-.hero__btn:hover{transform:translateY(-2px)}
-.hero__figure{margin:0}
-.hero__figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px;filter:saturate(.92)}
-.hero__cap{font-family:var(--display);font-style:italic;color:var(--mauve);font-size:.95rem;margin-top:.8rem}
+/* intro */
+.intro{padding-block:clamp(48px,8vw,90px) clamp(20px,4vw,40px)}
+.intro__h{font-size:clamp(2.4rem,6vw,4.4rem);letter-spacing:-.03em;margin:1.1rem 0 0;line-height:1}
+.intro__sub{color:var(--mauve);font-size:clamp(1rem,1.4vw,1.15rem);max-width:48ch;margin:1.4rem 0 0;font-weight:500}
 
-/* proof (Option B) */
-.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:clamp(36px,6vw,68px)}
-.proof div{background:var(--aubergine);padding:clamp(20px,3vw,32px) 16px;text-align:center}
-.proof .num{font-family:var(--display);font-weight:900;font-size:clamp(1.9rem,4vw,2.8rem);color:var(--ivory);line-height:1}
-.proof .lab{color:var(--mauve);font-size:.82rem;letter-spacing:.03em;margin-top:.55rem}
-@media(max-width:560px){.proof{grid-template-columns:1fr}}
-
-/* bio */
-.bio{border-top:1px solid var(--line)}
-.bio p{font-family:var(--display);font-weight:800;font-size:clamp(1.4rem,3vw,2.2rem);line-height:1.32;max-width:24ch;margin:0;color:var(--ivory)}
-.bio .link{display:inline-block;margin-top:1.8rem;font-family:var(--body);font-size:.9rem;letter-spacing:.03em;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px;transition:.2s}
-.bio .link:hover{border-color:var(--gold)}
-
-/* how I help */
-.hh__head{max-width:60ch}
-.hh__h{font-size:clamp(1.9rem,4vw,3rem);margin:.9rem 0 .7rem}
-.hh__intro{color:var(--mauve);max-width:46ch;margin:0}
-.hh__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:clamp(30px,5vw,50px)}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px 24px 30px;display:flex;flex-direction:column;gap:10px;transition:transform .2s,box-shadow .2s,border-color .2s}
-.card:hover{transform:translateY(-5px);border-color:var(--mauve);box-shadow:0 28px 60px -38px rgba(0,0,0,.7)}
-.card .n{font-size:11px;letter-spacing:.12em;color:var(--gold);font-weight:700}
-.card h3{font-size:1.35rem}
-.card p{color:var(--mauve);font-size:.95rem;line-height:1.5;margin:0}
-
-/* selected work (new card) */
-.work__head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem}
-.work__h{font-size:clamp(1.9rem,4vw,3rem);margin-top:.7rem}
-.work__all{font-size:.88rem;letter-spacing:.03em;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px;transition:.2s}
-.work__all:hover{border-color:var(--gold)}
-.work__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(18px,2.4vw,26px);margin-top:clamp(30px,5vw,50px)}
-.wc{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:16px 16px 14px;display:flex;flex-direction:column;box-shadow:0 30px 60px -34px rgba(0,0,0,.6)}
-.wc__title{font-family:var(--display);font-weight:500;color:var(--ivory);font-size:1.55rem;text-align:center;margin:6px 0 4px}
-.wc__status{display:flex;align-items:center;justify-content:center;gap:7px;color:var(--mauve);font-size:.8rem;margin:0 0 14px}
+/* work grid */
+.work__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(18px,2.4vw,26px)}
+.wc{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:16px 16px 14px;display:flex;flex-direction:column;box-shadow:0 28px 60px -42px rgba(0,0,0,.7)}
+.wc__title{font-weight:900;letter-spacing:-.02em;font-size:1.45rem;text-align:center;margin:6px 0 4px}
+.wc__status{display:flex;align-items:center;justify-content:center;gap:7px;color:var(--mauve);font-size:.8rem;font-weight:600;margin:0 0 14px}
 .wc__status .dot{width:7px;height:7px;border-radius:50%;background:var(--gold)}
-.wc__img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;background:var(--plum)}
+.wc__imgwrap{overflow:hidden;border-radius:16px}
+.wc__img{width:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .55s cubic-bezier(.2,.7,.2,1)}
+.wc:hover .wc__img{transform:scale(1.06)}
 .wc__bar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px}
 .wc__meta{display:flex;align-items:center;gap:9px;min-width:0}
-.wc__av{width:32px;height:32px;border-radius:50%;border:1.5px solid var(--ivory);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:11px;flex:none}
+.wc__av{width:32px;height:32px;border-radius:50%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.03);border:1.5px solid var(--line);flex:none}
 .wc__mt{line-height:1.25;min-width:0}
-.wc__mt b{display:block;color:var(--ivory);font-size:.84rem;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.wc__mt span{color:var(--mauve);font-size:.72rem}
-.wc__btn{display:flex;align-items:center;gap:7px;background:var(--gold);color:var(--plum);border-radius:99px;padding:11px 16px;font-weight:700;font-size:.82rem;text-decoration:none;flex:none;transition:transform .15s}
+.wc__mt b{display:block;font-size:.84rem;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wc__mt span{color:var(--mauve);font-size:.72rem;font-weight:600}
+.wc__btn{display:inline-flex;align-items:center;gap:7px;background:var(--gold);color:var(--plum);border-radius:99px;padding:11px 16px;font-weight:800;font-size:.82rem;text-decoration:none;flex:none;transition:transform .15s}
 .wc__btn:hover{transform:translateY(-2px)}
-.wc__btn svg{width:15px;height:15px}
-
-/* approach */
-.approach{background:var(--plum)}
-.approach .q{font-family:var(--display);font-weight:800;text-align:center;max-width:22ch;margin:0 auto;font-size:clamp(1.7rem,4vw,2.9rem);line-height:1.28;color:var(--ivory)}
+.wc__btn svg{width:15px;height:15px;transition:transform .2s}
+.wc__btn:hover svg{transform:translateX(3px)}
 
 /* cta */
 .cta{text-align:center}
-.cta h2{font-size:clamp(2.1rem,5vw,3.8rem);max-width:18ch;margin:0 auto;letter-spacing:-.02em}
-.cta__btn{display:inline-block;margin-top:2.2rem;font-size:.86rem;letter-spacing:.04em;font-weight:700;text-decoration:none;padding:1.05em 2em;border-radius:4px;background:var(--gold);color:var(--plum);transition:transform .15s}
+.cta h2{font-size:clamp(2.1rem,5vw,3.6rem);max-width:20ch;margin:0 auto;letter-spacing:-.03em}
+.cta__btn{display:inline-block;margin-top:2.1rem;font-size:.86rem;letter-spacing:.04em;font-weight:700;text-decoration:none;padding:1.05em 2em;border-radius:4px;background:var(--gold);color:var(--plum);transition:transform .15s}
 .cta__btn:hover{transform:translateY(-2px)}
 
-/* footer (same on all sizes) */
+/* footer */
 .footer{background:var(--plum);padding:24px var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:14px;border-top:1px solid var(--line)}
 .footer .brand{flex:1;min-width:0}
 .footer .brand .oo{width:32px;height:32px}
 .footer .brand .mark{font-size:1.05rem}
-.footer__copy{flex:1;text-align:center;font-size:.74rem;color:var(--mauve);letter-spacing:.02em;white-space:nowrap}
-.footer__social{display:flex;justify-content:flex-end;gap:12px;flex:1}
-.footer__email{font-size:.78rem;color:var(--ivory);opacity:.85;text-decoration:none;letter-spacing:.01em;border-bottom:1px solid var(--line);padding-bottom:2px;transition:.2s;white-space:nowrap}
-.footer__email:hover{color:var(--gold);border-color:var(--gold);opacity:1}
+.footer__copy{flex:1;text-align:center;font-size:.78rem;color:var(--mauve);letter-spacing:.02em;white-space:nowrap}
+.footer__social{display:flex;justify-content:flex-end;flex:1}
 .footer .ic{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--ivory);transition:.2s}
 .footer .ic:hover{border-color:var(--gold);color:var(--gold)}
 .footer .ic svg{width:18px;height:18px}
 
-.hero__visual{display:grid;grid-template-columns:1.2fr .9fr;gap:14px;align-items:center}
-.hero__photo{margin:0;border-radius:18px;overflow:hidden;background:var(--surface);box-shadow:0 40px 80px -44px rgba(0,0,0,.7)}
-.hero__photo img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:saturate(.95)}
-.steps{display:flex;flex-direction:column;gap:12px}
-.step{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;align-items:center;justify-content:center;text-align:center;transition:transform .3s ease,background .35s ease,border-color .35s ease,color .35s ease}
-.step .t{font-size:1.18rem;font-weight:900;letter-spacing:-.02em;color:var(--ivory)}
-.step.active{background:var(--gold);border-color:var(--gold);transform:translateY(-4px)}
-.step.active .t{color:var(--plum)}
-@media(max-width:520px){.hero__visual{grid-template-columns:1fr}.steps{flex-direction:row;flex-wrap:wrap}.step{flex:1;min-width:120px}}
-@media(max-width:860px){
-  .hero__grid{grid-template-columns:1fr}
-  .hero__visual{max-width:560px}
-}
 @media(max-width:680px){
   .nav__links{position:fixed;inset:62px 0 auto 0;flex-direction:column;align-items:flex-start;gap:18px;background:var(--aubergine);padding:24px var(--gutter);border-bottom:1px solid var(--line);transform:translateY(-130%);transition:transform .28s;z-index:40}
   .nav__links[data-open=true]{transform:translateY(0)}
   .nav__toggle{display:flex;margin-left:auto}
 }
-@media(max-width:560px){
-  .footer{padding-inline:16px}
-  .footer .brand .mark{display:none}
-  .footer__copy{font-size:.7rem}
-}
-
-/* motion */
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
-.reveal.in{opacity:1;transform:none}
-.hh__grid .card:nth-child(2){transition-delay:.07s}
-.hh__grid .card:nth-child(3){transition-delay:.14s}
-.hh__grid .card:nth-child(4){transition-delay:.21s}
-.hh__grid .card:nth-child(5){transition-delay:.28s}
-.work__grid .wc:nth-child(2){transition-delay:.1s}
-.work__grid .wc:nth-child(3){transition-delay:.2s}
-.wc__imgwrap{overflow:hidden;border-radius:14px}
-.wc__img{transition:transform .55s cubic-bezier(.2,.7,.2,1)}
-.wc:hover .wc__img{transform:scale(1.06)}
-.wc__btn svg{transition:transform .2s}
-.wc__btn:hover svg{transform:translateX(3px)}
+@media(max-width:560px){.footer .brand .mark{display:none}.footer__copy{font-size:.7rem}}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.fade{opacity:1;transform:none}.reveal{opacity:1!important;transform:none!important}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
@@ -180,14 +101,12 @@ em{font-style:italic;color:var(--gold)}
     <img class="oo" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782415147/3e57188f-56fa-4f72-945c-d29472e1f4ba_yxgpcu.jpg" alt="Oreoluwa Oladeinde">
     <span class="mark"><b>Oreoluwa</b><span class="dot">.</span></span>
   </a>
-  <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
+  <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Menu"><span></span><span></span><span></span></button>
   <nav>
     <ul class="nav__links" id="navLinks">
-      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a href="projects.html" aria-current="page">Projects</a></li>
       <li><a class="nav__cta" href="contact.html">Hire me</a></li>
     </ul>
   </nav>
@@ -195,59 +114,15 @@ em{font-style:italic;color:var(--gold)}
 
 <main>
 
-  <section class="hero wrap">
-    <div class="hero__grid">
-      <div>
-        <h1 class="hero__title fade">Turning quiet brands into the names everyone's <em>talking about.</em></h1>
-        <p class="hero__lede fade d1">Social media manager, brand strategist, and writer. Based in Nigeria, working globally.</p>
-        <a class="hero__btn fade d2" href="contact.html">Hire me</a>
-      </div>
-      <div class="hero__visual fade d2">
-        <figure class="hero__photo">
-          <img src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782415147/3e57188f-56fa-4f72-945c-d29472e1f4ba_yxgpcu.jpg" alt="Oreoluwa Oladeinde">
-        </figure>
-        <div class="steps">
-          <div class="step"><span class="t">Understand</span></div>
-          <div class="step"><span class="t">Strategise</span></div>
-          <div class="step"><span class="t">Grow</span></div>
-        </div>
-      </div>
-    </div>
-    <div class="proof fade d3">
-      <div><div class="num" data-count="37" data-suffix="K+">37K+</div><div class="lab">impressions</div></div>
-      <div><div class="num" data-count="6" data-suffix="+">6+</div><div class="lab">influencer collab</div></div>
-      <div><div class="num" data-count="500" data-suffix="K+">500K+</div><div class="lab">in sales</div></div>
-    </div>
+  <!-- INTRO -->
+  <section class="intro wrap">
+    <p class="eyebrow reveal">Selected work</p>
+    <h1 class="intro__h reveal">Proof that good writing <em>moves</em> people.</h1>
+    <p class="intro__sub reveal">A look at the brands, words, and campaigns I've shaped, across collaboration, content, social media, story writing, and sales.</p>
   </section>
 
-  <section class="section wrap bio">
-    <p class="reveal">I help brands execute ideas and turn brand identity into a language audiences understand, trust, and follow. I build brands through language, strategy, and storytelling. From copy that converts to content that connects. Based in Nigeria, working globally.</p>
-    <a class="link reveal" href="#work">See selected work &rarr;</a>
-  </section>
-
-  <section class="section wrap">
-    <div class="hh__head reveal">
-      <p class="eyebrow">What I do</p>
-      <h2 class="hh__h">Five ways I help brands say what they mean, and <em>mean what they say.</em></h2>
-      <p class="hh__intro">Strategy and storytelling that move past pretty posts into things people remember, trust, and buy.</p>
-    </div>
-    <div class="hh__grid">
-      <div class="card reveal"><span class="n">01</span><h3>Brand strategy</h3><p>I find what makes you you, then turn it into a voice and a position people remember.</p></div>
-      <div class="card reveal"><span class="n">02</span><h3>Social media management</h3><p>I run your feed end to end, growing an audience that actually listens, not just scrolls.</p></div>
-      <div class="card reveal"><span class="n">03</span><h3>Content strategy</h3><p>I plan what to say and when, so every post earns its place and builds toward something.</p></div>
-      <div class="card reveal"><span class="n">04</span><h3>Content writing</h3><p>Stories, articles, and captions that sound human and make people stay.</p></div>
-      <div class="card reveal"><span class="n">05</span><h3>Copywriting</h3><p>Words built to move, from launch lines to the sentence that closes the sale.</p></div>
-    </div>
-  </section>
-
-  <section class="section wrap" id="work">
-    <div class="work__head reveal">
-      <div>
-        <p class="eyebrow">Selected work</p>
-        <h2 class="work__h">A few things I'm proud of.</h2>
-      </div>
-      <a class="work__all" href="projects.html">All projects &rarr;</a>
-    </div>
+  <!-- PROJECTS GRID -->
+  <section class="section wrap" style="padding-top:0" id="work">
     <div class="work__grid">
 
       <article class="wc reveal">
@@ -255,10 +130,7 @@ em{font-style:italic;color:var(--gold)}
         <p class="wc__status"><span class="dot"></span> Brand partnerships</p>
         <div class="wc__imgwrap"><img class="wc__img" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782445888/Seven_Ways_To_Close_The_Diversity_And_Inclusion_Gap_That_Are_Easier_Than_You_Think_alb9vm.jpg" alt="Collaboration work"></div>
         <div class="wc__bar">
-          <div class="wc__meta">
-            <span class="wc__av">OO</span>
-            <span class="wc__mt"><b>Oreoluwa Oladeinde</b><span>6+ collaborations</span></span>
-          </div>
+          <div class="wc__meta"><img class="wc__av" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782415147/3e57188f-56fa-4f72-945c-d29472e1f4ba_yxgpcu.jpg" alt=""><span class="wc__mt"><b>Oreoluwa Oladeinde</b><span>6+ collaborations</span></span></div>
           <a class="wc__btn" href="https://drive.google.com/drive/folders/1bzUd3ew7ZO4ZZubK2ZedcRpb6_DMp3E2" target="_blank" rel="noopener" aria-label="Open Collaboration on Drive">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
@@ -268,10 +140,7 @@ em{font-style:italic;color:var(--gold)}
         <p class="wc__status"><span class="dot"></span> Articles and copy</p>
         <div class="wc__imgwrap"><img class="wc__img" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782446477/24_Digital_Marketing_Tips_That_HubSpot_Swears_By_Research_qqaqy9.jpg" alt="Content writing work"></div>
         <div class="wc__bar">
-          <div class="wc__meta">
-            <span class="wc__av">OO</span>
-            <span class="wc__mt"><b>Oreoluwa Oladeinde</b><span>Selected pieces</span></span>
-          </div>
+          <div class="wc__meta"><img class="wc__av" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782415147/3e57188f-56fa-4f72-945c-d29472e1f4ba_yxgpcu.jpg" alt=""><span class="wc__mt"><b>Oreoluwa Oladeinde</b><span>Selected pieces</span></span></div>
           <a class="wc__btn" href="https://drive.google.com/drive/folders/1ZXeb83MgjXI8soOwz67OhaUDrOFSSjV9" target="_blank" rel="noopener" aria-label="Open Content writing on Drive">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
@@ -281,27 +150,48 @@ em{font-style:italic;color:var(--gold)}
         <p class="wc__status"><span class="dot"></span> Growth on X</p>
         <div class="wc__imgwrap"><img class="wc__img" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782446558/download_4_p0kyxk.jpg" alt="Social media engagement work"></div>
         <div class="wc__bar">
-          <div class="wc__meta">
-            <span class="wc__av">OO</span>
-            <span class="wc__mt"><b>Oreoluwa Oladeinde</b><span>37K+ impressions</span></span>
-          </div>
+          <div class="wc__meta"><img class="wc__av" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782415147/3e57188f-56fa-4f72-945c-d29472e1f4ba_yxgpcu.jpg" alt=""><span class="wc__mt"><b>Oreoluwa Oladeinde</b><span>37K+ impressions</span></span></div>
           <a class="wc__btn" href="https://drive.google.com/drive/folders/1TG_n1NFVslW7a8u_vCqABOpzI03yl9zx" target="_blank" rel="noopener" aria-label="Open Social media engagement on Drive">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="wc reveal">
+        <h3 class="wc__title">Story writing</h3>
+        <p class="wc__status"><span class="dot"></span> Short fiction and essays</p>
+        <div class="wc__imgwrap"><img class="wc__img" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782614554/One_of_my_favorite_things_to_do_in_my_spare_time_jv1r11.jpg" alt="Story writing work"></div>
+        <div class="wc__bar">
+          <div class="wc__meta"><img class="wc__av" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782415147/3e57188f-56fa-4f72-945c-d29472e1f4ba_yxgpcu.jpg" alt=""><span class="wc__mt"><b>Oreoluwa Oladeinde</b><span>Selected stories</span></span></div>
+          <a class="wc__btn" href="https://drive.google.com/drive/folders/1kLGqPAxLHP9ZCFr3BfJ77gVOSrLl8gZf" target="_blank" rel="noopener" aria-label="Open Story writing on Drive">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="wc reveal">
+        <h3 class="wc__title">Olive &amp; Orchids</h3>
+        <p class="wc__status"><span class="dot"></span> Social media management</p>
+        <div class="wc__imgwrap"><img class="wc__img" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782614678/Luxury_2_bed_Service_Apartment_at_Ikate_g3c5ks.jpg" alt="Olive and Orchids social media work"></div>
+        <div class="wc__bar">
+          <div class="wc__meta"><img class="wc__av" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782415147/3e57188f-56fa-4f72-945c-d29472e1f4ba_yxgpcu.jpg" alt=""><span class="wc__mt"><b>Oreoluwa Oladeinde</b><span>Client work</span></span></div>
+          <a class="wc__btn" href="https://drive.google.com/drive/folders/1YazUctMvitNuHWWDbUfYl-lFF-XgHn8m" target="_blank" rel="noopener" aria-label="Open Olive and Orchids on Drive">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="wc reveal">
+        <h3 class="wc__title">Sales</h3>
+        <p class="wc__status"><span class="dot"></span> Sales and conversion</p>
+        <div class="wc__imgwrap"><img class="wc__img" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782614939/download_6_rpg8zy.jpg" alt="Sales work"></div>
+        <div class="wc__bar">
+          <div class="wc__meta"><img class="wc__av" src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782415147/3e57188f-56fa-4f72-945c-d29472e1f4ba_yxgpcu.jpg" alt=""><span class="wc__mt"><b>Oreoluwa Oladeinde</b><span>500K+ driven</span></span></div>
+          <a class="wc__btn" href="https://drive.google.com/drive/folders/17fWsnXN_0HBeyxBG9b5rcxOMHG_hHnLS" target="_blank" rel="noopener" aria-label="Open Sales on Drive">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
 
     </div>
   </section>
 
-  <section class="section approach">
-    <div class="wrap">
-      <p class="eyebrow" style="text-align:center;margin-bottom:1.6rem">The approach</p>
-      <p class="q reveal">A brand isn't what you say about yourself. It's what your audience repeats <em>when you're not in the room.</em></p>
-    </div>
-  </section>
-
+  <!-- CTA -->
   <section class="section wrap cta">
-    <h2 class="reveal">Ready to become the name everyone's <em>talking about?</em></h2>
-    <a class="cta__btn" href="contact.html">Hire me</a>
+    <h2 class="reveal">Want work like this for <em>your brand?</em></h2>
+    <a class="cta__btn reveal" href="contact.html">Hire me</a>
   </section>
 
 </main>
@@ -321,24 +211,9 @@ em{font-style:italic;color:var(--gold)}
 
 <script>
   var t=document.getElementById('navToggle'),l=document.getElementById('navLinks');
-  t.addEventListener('click',function(){
-    var open=l.getAttribute('data-open')==='true';
-    l.setAttribute('data-open',String(!open));
-    t.setAttribute('aria-expanded',String(!open));
-  });
-
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.15,rootMargin:'0px 0px -8% 0px'});
+  t.addEventListener('click',function(){var o=l.getAttribute('data-open')==='true';l.setAttribute('data-open',String(!o));t.setAttribute('aria-expanded',String(!o));});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
-  function easeOut(t){return 1-Math.pow(1-t,3);}
-  function count(el){var target=+el.getAttribute('data-count'),suf=el.getAttribute('data-suffix')||'',dur=1200,start=null;function step(ts){if(!start)start=ts;var p=Math.min((ts-start)/dur,1);el.textContent=Math.round(easeOut(p)*target)+suf;if(p<1)requestAnimationFrame(step);}requestAnimationFrame(step);}
-  var nums=document.querySelectorAll('.proof .num[data-count]');
-  if(!reduce){
-    nums.forEach(function(n){n.textContent='0'+(n.getAttribute('data-suffix')||'');});
-    var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){count(e.target);cio.unobserve(e.target);}});},{threshold:.5});
-    nums.forEach(function(n){cio.observe(n);});
-  }
-  if(!reduce){var stp=document.querySelectorAll('.steps .step');if(stp.length){var si=0;stp[0].classList.add('active');setInterval(function(){stp[si].classList.remove('active');si=(si+1)%stp.length;stp[si].classList.add('active');},1600);}}
 </script>
 </body>
 </html>
